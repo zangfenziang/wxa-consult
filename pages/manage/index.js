@@ -17,7 +17,8 @@ Page({
     this.getList({
       init: true,
       offset: 0,
-      limit: 20
+      limit: 20,
+      status: -1
     })
   },
   getList({
@@ -159,7 +160,7 @@ Page({
       init: true,
       offset: 0,
       limit: this.data.limit,
-      status: value < 0 ? undefined : value
+      status: value
     })
   }
 })
