@@ -1,0 +1,34 @@
+<mp-navigation-bar back="{{false}}" title="报告防伪">
+  <navigator slot="left" open-type="exit" target="miniProgram" hover-class="none">
+    <view class="back-icon"></view>
+  </navigator>
+</mp-navigation-bar>
+<view wx:if="{{success}}" class="consult-success">
+   <view class="title">
+    <icon class="icon-box-img" type="success" size="93"></icon>
+    <view class="msg">提交成功</view>
+    <view class="tips">工作人员会在一至三个工作日联系你</view>
+   </view>
+   <view class="bottom-btn">
+    <navigator open-type="exit" target="miniProgram" hover-class="none">
+      <button class="weui-btn" type="primary" bindtap="goBack">返回</button>
+    </navigator>
+   </view>
+</view>
+<view wx:else class="consult">
+  <mp-cells footer="一至三个工作日内会有工作人员与您联系">
+    <mp-cell title="报告编号">
+      <input bindinput="formInputChange" data-field="id" class="weui-input" placeholder="请输入报告编号"/>
+    </mp-cell>
+    <mp-cell title="报告名称">
+      <input bindinput="formInputChange" data-field="name" class="weui-input" placeholder="请输入报告名称"/>
+    </mp-cell>
+    <mp-cell title="评估结果">
+      <input bindinput="formInputChange" data-field="result" class="weui-input" placeholder="请输入评估结果"/>
+    </mp-cell>
+    <mp-cell title="联系方式">
+      <input bindinput="formInputChange" data-field="phone" class="weui-input" placeholder="请输入联系方式"/>
+    </mp-cell>
+  </mp-cells>
+  <button class="weui-btn" type="primary" bindtap="submitForm">提交</button>
+</view>

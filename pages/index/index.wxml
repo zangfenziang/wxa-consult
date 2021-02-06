@@ -1,0 +1,14 @@
+<mp-navigation-bar back="{{false}}" title="世纪人管理端" />
+<view wx:if="{{loading}}" class="loading">
+  <mp-loading type="circle"></mp-loading>
+</view>
+<view wx:elif="{{!status}}" class="login">
+  <view class="login__hd">
+    <icon class="icon-box-img" type="info" size="93"></icon>
+    <view class="msg">无管理权限</view>
+    <view class="tips">请将openid: {{openid}} 发送给负责人添加权限</view>
+  </view>
+  <view class="login__ft">
+    <button class="weui-btn" type="primary" bindtap="copyOpenId">复制</button>
+  </view>
+</view>

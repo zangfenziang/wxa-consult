@@ -1,0 +1,44 @@
+page{
+  background-color: #f8f8f8;
+}
+
+.consult{
+  padding-top: 12px;
+}
+
+.weui-cell__hd{
+  margin-right: 12px;
+}
+.weui-btn{
+  margin-top: 48px;
+}
+
+.consult-success .title{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 128rpx;
+}
+
+.consult-success .msg {
+  margin-top: 24rpx;
+  font-size: 48rpx;
+}
+
+.consult-success .tips{
+  margin-top: 24rpx;
+}
+
+.consult-success .bottom-btn{
+  position: absolute;
+  bottom: 192rpx;
+  left: 0;
+  right: 0;
+}
+
+.back-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24' viewBox='0 0 12 24'%3E  %3Cpath fill-opacity='.9' fill-rule='evenodd' d='M10 19.438L8.955 20.5l-7.666-7.79a1.02 1.02 0 0 1 0-1.42L8.955 3.5 10 4.563 2.682 12 10 19.438z'/%3E%3C/svg%3E");
+  width: 12px;
+  height: 24px;
+}

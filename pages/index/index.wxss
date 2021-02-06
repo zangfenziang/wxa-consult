@@ -1,0 +1,21 @@
+.login__hd{
+  margin-top: 192rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__hd .msg {
+  font-size: 48rpx;
+  margin-top: 12rpx;
+}
+.login__hd .tips {
+  margin-top: 12rpx;
+  padding: 0 36rpx;
+  text-align: center;
+}
+.login__ft{
+  position: absolute;
+  bottom: 192rpx;
+  left: 0;
+  right: 0;
+}

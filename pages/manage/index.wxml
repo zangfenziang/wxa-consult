@@ -1,0 +1,37 @@
+<mp-navigation-bar back="{{false}}" title="世纪人管理端" />
+<view class="filter" bindtap="showAction">
+  订单状态: 
+  <block wx:if="{{status == 0}}">未处理</block>
+  <block wx:elif="{{status == 1}}">已处理</block>
+  <block wx:else>全部</block>
+</view>
+<view class="list">
+  <block wx:for="{{list}}" wx:key="index">
+    <view class="item">
+      <view class="left">
+        <view class="detail">
+          <view class="title">编号</view>
+          <view class="content">{{item.rid}}</view>
+        </view>
+        <view class="detail">
+          <view class="title">名称</view>
+          <view class="content">{{item.name}}</view>
+        </view>
+        <view class="detail">
+          <view class="title">结果</view>
+          <view class="content">{{item.result}}</view>
+        </view>
+        <view class="detail">
+          <view class="title">电话</view>
+          <view class="content">{{item.phone}}</view>
+        </view>
+      </view>
+      <view class="right">
+        <button data-refer="{{item}}" class="weui-btn" type="primary" bindtap="copy">复制</button>
+        <button data-id="{{item._id}}" data-status="1" class="weui-btn" type="primary" bindtap="closeConsult" wx:if="{{item.status == 0}}">已处理</button>
+      </view>
+    </view>
+  </block>
+  <mp-loading wx:if="{{loading}}" type="circle"></mp-loading>
+</view>
+<mp-actionSheet bindactiontap="btnClick" show="{{showActionsheet}}" actions="{{groups}}" title="咨询单状态"></mp-actionSheet>
