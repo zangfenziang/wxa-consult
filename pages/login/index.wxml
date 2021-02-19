@@ -1,0 +1,5 @@
+<mp-navigation-bar back="{{false}}" title="报告防伪">
+  <navigator slot="left" open-type="exit" target="miniProgram" hover-class="none">
+    <view class="back-icon"></view>
+  </navigator>
+</mp-navigation-bar>
