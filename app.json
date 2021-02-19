@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/login/index",
     "pages/index/index",
     "pages/manage/index",
-    "pages/consult/index",
-    "pages/login/index"
+    "pages/consult/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
