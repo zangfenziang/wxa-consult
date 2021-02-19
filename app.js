@@ -2,7 +2,7 @@
 App({
   onLaunch() {
     wx.cloud.init({
-      env: "mini-voice-assistant-sfnya",
+      env: "wxa-consult-7gjk58sq502e4e1a",
       traceUser: true
     })
   }
